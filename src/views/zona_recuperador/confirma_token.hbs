@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/recuperar/recuperar.css">
+    <title>verificacion de token</title>
+</head>
+<body>
+    <div class="form_container">
+        <div class="form_white">
+            {{!-- <div class="form_blue"> --}}
+                <div class="form">
+                    <h1>verificacion de token</h1>
+                    <form action="/recuperar_cuenta/confirmar_codigo_recuperador" method="post">
+                        <p>
+                            <label for="token">ingrese token para cambiar contraseña</label>
+                        </p>
+                        <p>
+                            <input type="text" id="token" name="token" placeholder="ingrese token aqui" autofocus required accesskey="a">
+                        </p>
+                        
+                        <p><button>recuperar contraseña</button></p>
+                        <p><a class="back" href="/iniciar_sesion">iniciar sesion</a><a class="back" href="/registrar_cuenta">registrarse</a></p>
+                        {{!-- ◀ &nbsp; --}}
+                        {{!-- <p>{{#if (sesion) }} <span> {{ sesion }}</span> {{/if}}</p> --}}
+                        {{!-- al parecer entre parentisis es invalido --}}
+                        {{!-- <p>{{#if sesion}} <span> {{ sesion }}</span> {{/if}}</p> --}}
+                    </form>
+                </div>
+            {{!-- </div> --}}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro:400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/experimental.css">
+    <title>sistema de usuarios</title>
+    <style>
+        body{
+            margin: 0;
+            position: relative;
+            height: auto;
+        }
+        #video{
+            width: 100%;
+            height: 600px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .video-container{
+            height: 1000px;
+            
+        }
+    </style>
+</head>
+<body class="clase1 clase2 clase3">
+    <header class="container">
+        {{> menu/menu}}
+    </header>
+    <main id="hero">
+        <h1>bienvenido</h1>
+        <!-- el maximo tamaño que alcanza es en main o en body -->
+        <article>
+            <p><a href="/">inicio</a></p>
+            <p><a href="/iniciar_sesion">sesion</a></p>
+            
+        </article>
+    </main>
+    <section id="pizzarra" class="n">
+    </section>
+    <section>
+        <textarea name="textarea" id="bandeja" cols="30" rows="10"></textarea>
+        <input type="checkbox" name="check1" id="check1">
+    </section>
+    <section class="video-container">
+        <p>martes 1 de noviembre parte 1</p>
+        <video src="aga1-11-01-parte1.mp4" id="video" controls></video>
+    </section>
+    <section class="video-container">
+        <p>martes 1 de noviembre parte 2</p>
+        <video src="aga1-11-01-parte2.mp4" id="video" controls></video>
+    </section>
+    <section class="video-container">
+        <p>viernes 28 de octubre parte 1</p>
+        <video src="/aga1-10-28-parte1.mp4" id="video" controls></video>
+    </section>
+    <section class="video-container">
+        <p>viernes 28 de octubre parte 2</p>
+        <video src="/aga1-10-28-parte2.mp4" id="video" controls></video>
+    </section>
+    
+    <section class="video-container">
+        <p>ing</p>
+        <video src="/ingles08-10-inicio.mp4" id="video" controls></video>
+    </section>
+    <section class="video-container">
+        <p>ing 2</p>
+        <video src="/ingles08-10-fin.mp4" id="video" controls></video>
+    </section>
+    <section class="video-container">
+        <p>AGA 11/10/2022 parte 1</p>
+        <video src="/aga11-10.mp4" id="video" controls></video>
+    </section>
+    <section class="video-container">
+        <p>AGA 11/10/2022 parte 2</p>
+        <video src="/aga11-10-parte2.mp4" id="video" controls></video>
+    </section>
+    <section class="video-container">
+        <p>AGA 04/10/2022</p>
+        <video src="/aga04-10.mp4" id="video" controls></video>
+    </section>
+    <section class="video-container">
+        <p>first fisica</p>
+        <video src="/fisica1.mp4" id="video" controls></video>
+    </section>
+    <section class="video-container">
+        <p>post recreo</p>
+        <video src="/fisica2.mp4" id="video" controls></video>
+    </section>
+    <section class="video-container">
+        <p>clase de s</p>
+        <video src="/video.mp4" id="video" controls></video>
+    </section>
+    <section class="container-contacto">
+        {{> contacto/contacto }}
+    </section>
+    <footer>
+        {{> footer/footer }}
+    </footer>
+    <script src="/js/js.js"></script>
+</body>
+</html>

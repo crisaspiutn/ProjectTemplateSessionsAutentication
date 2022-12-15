@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="css/footer.css">
+<div id="footer">
+    <p id="ultimate-date">última actualización: 4/09/2022 </p>
+    <script>
+        let fecha_actual=new Date();
+        let fecha_formateada=
+        (   fecha_actual.getDate().toString().length==1?"0"+fecha_actual.getDate():fecha_actual.getDate()   )+'/'+ 
+        (   ( fecha_actual.getMonth()+1 ).toString().length==1?"0"+(fecha_actual.getMonth()+1):(fecha_actual.getMonth()+1)   )+'/'+ 
+        fecha_actual.getFullYear() +' '+ fecha_actual.getHours()+':'+ fecha_actual.getMinutes();
+    document.getElementById("ultimate-date").innerText="última actualización: "+fecha_formateada;
+    </script>
+    <img class="img_contacto" src="/img/logo-cristian-aspi.jpg" alt="no se encontro el logo">
+    <p><strong>autor: </strong><small>cristian aspi</small></p>
+</div>

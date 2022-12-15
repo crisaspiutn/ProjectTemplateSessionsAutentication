@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/registrarse/registrarse.css">
+    <title>registrate</title>
+</head>
+<body>
+    <div class="form_container">
+        <div class="form_white">
+            {{!-- <div class="form_blue"> --}}
+
+                <div class="form">
+                    <h1>Registrate</h1>
+                    <form action="/registrar_cuenta" method="post">
+                        <p>
+                            <label for="username">Nombre de usaurio</label>
+                            <input type="text" id="username" name="username" placeholder="username" autofocus required accesskey="a">
+                        </p>
+                        <p>
+                            <label for="email">Ingresa email</label>
+                            <input id="email" type="email" name="email" placeholder="email" required>
+                        </p>
+                        <p>
+                            <label for="celular">Ingrese su numero</label>
+                            <input type="tel" name="celular" id="celular" placeholder="celular con condigo">
+                        </p>
+                        <p>
+                            <label for="password">Ingresa contraseña</label>
+                            <input id="password" type="password" name="password" placeholder="password" required>
+                        </p>
+                        <p>
+                            <label for="password2">Repite la contraseña</label>
+                            <input id="password2" type="password" name="password2" placeholder="repeat password" required>
+                        </p>
+                        <p><a class="back" href="/iniciar_sesion">iniciar sesion</a><button>registrarse</button></p>
+                        <p><a class="btn-recover" href="/recuperar_cuenta">recuperar contraseña</a></p>
+                        {{!-- ◀ &nbsp; --}}
+                        {{!-- <p>{{#if (sesion) }} <span> {{ sesion }}</span> {{/if}}</p> --}}
+                        {{!-- al parecer entre parentisis es invalido --}}
+                        {{!-- <p>{{#if sesion}} <span> {{ sesion }}</span> {{/if}}</p> --}}
+                    </form>
+                </div>
+            {{!-- </div> --}}
+        </div>
+    </div>
+    
+    {{!-- <p><a href="/">vuelve</a></p>
+    <p><a href="/iniciar_sesion">sesion</a></p>
+    <p><strong>usuario: </strong><span>{{ username }}</span></p> --}}
+</body>
+</html>

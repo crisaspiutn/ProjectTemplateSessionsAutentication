@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/registrarse/registrarse.css">
+    <title>inicio de sesion</title>
+</head>
+
+<body>
+    <div class="form_container">
+        <div class="form_white">
+
+            <div class="form">
+                <h1>Iniciar sesion</h1>
+                <form action="/registrar_cuenta" method="post">
+                    <p>
+                        <label for="username">Usuario o email</label>
+                        <input type="text" type="email" id="username" name="username" placeholder="username o email" autofocus required accesskey="a">
+                    </p>
+                    <p>
+                        <label for="password">Ingresa contraseña</label>
+                        <input id="password" type="password" name="password" placeholder="password" required>
+                    </p>
+                    <p><a class="back" href="/registrar_cuenta">registrarse</a><button>iniciar sesion</button></p>
+                    <p><a class="btn-recover" href="/recuperar_cuenta">recuperar contraseña</a></p>
+                    {{!-- ◀ &nbsp; --}}
+                    {{!-- <p>{{#if (sesion) }} <span> {{ sesion }}</span> {{/if}}</p> --}}
+                    {{!-- al parecer entre parentisis es invalido --}}
+                    {{!-- <p>{{#if sesion}} <span> {{ sesion }}</span> {{/if}}</p> --}}
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

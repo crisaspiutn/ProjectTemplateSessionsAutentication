@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ruta no valida encontrado</title>
+</head>
+<body style="background-color: red;">
+    <h1>pagina no encontrada</h1>
+    <h2>seras redirigido en <span id="temporizador">5</span></h2>
+    <script>
+        const reloj=document.getElementById("temporizador");
+        function reduceSegundosDeElemento(elemento){
+            setTimeout(() => {
+                if(Number(elemento.innerText)!=0){
+                    elemento.innerText=Number(elemento.innerText)-1;
+                    reduceSegundosDeElemento(elemento);
+                }
+                else{
+                    location.assign("/");// las redirecciones si no detecto
+                    // location.href=("/");// la accion del humano entonces reemplaza la url
+                }
+                // espacio
+                // console.log();
+                // if(Number.isInteger(reloj.getAttribute("values"))){
+                // }
+                
+            }, 1000);
+        }
+        reduceSegundosDeElemento(reloj);
+    </script>
+</body>
+</html>

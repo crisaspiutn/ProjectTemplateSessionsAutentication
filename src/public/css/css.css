@@ -1,0 +1,40 @@
+@charset "utf-8";
+body {  
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+    font-size: 20px;
+    /* font-weight: normal; */
+    font-family:'Source Sans Pro',sans-serif;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+p{    margin: 0;}
+h1, h2, h3, h4, h5, h6 {margin: 0;}
+/* menu ocupara nav por lo que no se puede usar nav despues */
+/* .container{  } */
+#hero{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-color: #f5f6f8;
+    /* background-color: black; */
+    /* color: white; */
+}
+.container-contacto{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* se comunica con el body con position:relative */
+}
